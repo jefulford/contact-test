@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h1>Contact</h1>
+<form action="thanks.html" netlify-honeypot="bot-field" netlify>
+	<label>
+		Name
+		<input type="text" name="name">
+	</label>
+	<label>
+		Email
+		<input type="email" name="email">
+	</label>
+	<label>
+		Subject
+		<input type="text" name="subject">
+	</label>
+	<label>
+		Message
+		<textarea name="message" cols="30" rows="10">Write your message here...</textarea>
+	</label>
+	<label style="display:none;">
+		Don't fill this out
+		<input name="bot-field">
+	</label>
+	<input type="submit" value="Submit">
+</form>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Netlify Form Test</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Contact</h1>
+<form action="thanks.html" netlify-honeypot="bot-field" netlify>
+	<label>
+		Name
+		<input type="text" name="name">
+	</label>
+	<label>
+		Email
+		<input type="email" name="email">
+	</label>
+	<label>
+		Subject
+		<input type="text" name="subject">
+	</label>
+	<label>
+		Message
+		<textarea name="message" cols="30" rows="10">Write your message here...</textarea>
+	</label>
+	<label style="display:none;">
+		Don't fill this out
+		<input name="bot-field">
+	</label>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
